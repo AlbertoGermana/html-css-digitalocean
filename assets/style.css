@@ -20,11 +20,11 @@
   display: table;
   clear: both;
 }
-a{
+nav a{
   color: gray;
   padding-left: 15px;
 }
-a:hover{
+nav a:hover{
   color: #0069ff;
 }
 
@@ -95,7 +95,33 @@ ul li.li_inline_block{
 /* !non capisco perche non aggiunge il colore alla scritta esempio:  color:red; */
 }
 .line{
-  background-color: red;
-  height: 2px;
-  width: 100px;
+  background-color: lightgray;
+  height: 1px;
+  width: 150px;
+  display: inline-block;
+  margin: 3px 10px;;
+}
+#login_panel img{
+  width: 18px;
+  height: 18px;
+  position: relative;
+  display: block;
+  top: 8px;
+  left: 25px;
+}
+#login_panel .btn-default{
+  background-color: #f2f8ff;
+  width: 80%;
+  height: 48px;
+  margin: 46px auto;
+  display: block;
+  padding: 15px;
+  font-size: 20px;
+}
+#login_panel .btn-default:hover{
+  background-color: #d5e4f7;
+}
+#login_panel p{
+  font-size: 12px;
+  color: black;
 }
