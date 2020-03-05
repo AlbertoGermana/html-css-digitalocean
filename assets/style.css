@@ -298,9 +298,40 @@ ul li.li_inline_block{
   padding: 10px 32px;
 }
 
-
-
+/* FOOTER */
 footer{
+  background-color: #031c4e;
+  color: #7a859d;
+}
+footer a{
+  color: #7a859d;
+}
+footer a:hover, footer a strong{
+  color: white;
+  text-decoration: none;
+}
+footer p{
+  margin: 0;
+  padding: 0;
+}
+footer p strong{
+  color: white;;
+}
+footer img{
+  margin-bottom: 10px;
+}
+footer i{
+  font-size: 20px;
+  margin: 10px 5px;
+}
+footer i:hover{
+  color: white;
+}
+footer #copyright{
+  padding: 100px 0;
+}
+footer ul li{
+  list-style-type: none;
 
 
 }
