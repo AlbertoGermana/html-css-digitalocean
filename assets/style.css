@@ -30,7 +30,8 @@ nav a:hover{
 h2{
   color: #031b4e;
   font-size: 36px;
-  margin: 10px auto;
+  margin: 40px auto;
+  font-weight: bolder;
 }
 
 h3{
@@ -40,7 +41,7 @@ h3{
 p{
   color: #4a5c81;
   font-size: 16px;
-  padding: 2%;
+  padding: 0 2% 2% 2%;
 }
 #deploy, #designed, #features, #service, #development h2{
   margin-top: 50px;
@@ -243,6 +244,39 @@ ul li.li_inline_block{
   margin-right: 5%;
   margin-top: 50px;
 }
+
+/* SEZIONE 3/7 */
+
+
+/* SEZIONE 4/7 */
+#features img{
+  float: left;
+  margin-right: 10px;
+}
+
+/* SEZIONE 5/7 */
+#service{
+  background: #031b4e url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
+  padding-bottom: 100px;
+}
+
+#service h2{
+  color: white;
+}
+#service table td{
+  color: white;
+  padding: 3% 3% 3% 0;
+  border-bottom: 1px solid gray;
+
+}
+.opacita{
+  opacity: 0.7;
+}
+#service table td a{
+  padding-left: 80px;
+}
+
+/* SEZIONE 6/7 */
 
 footer{
   /* DEBUG:  */
