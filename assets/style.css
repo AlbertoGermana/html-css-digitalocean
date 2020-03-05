@@ -106,7 +106,6 @@ ul li.li_inline_block{
 }
 #login_panel{
   width: 480px;
-  height: 410px;
   background-color: white;
   border-radius: 10px;
 }
@@ -277,9 +276,31 @@ ul li.li_inline_block{
 }
 
 /* SEZIONE 6/7 */
+#blockquote{
+  width: 750px;
+  margin: 0 auto;
+}
+
+/* SEZIONE 7/7 */
+#getstarted .jumbotron{
+  margin-top: 0;
+  border-radius: 0;
+}
+#getstarted h2{
+  color: white;
+  font-weight: bolder;
+}
+
+#getstarted .btn-primary{
+  background-color: white;
+  color: #006aff;
+  font-weight: bold;
+  padding: 10px 32px;
+}
+
+
 
 footer{
-  /* DEBUG:  */
-  height: 700px;
+
 
 }
