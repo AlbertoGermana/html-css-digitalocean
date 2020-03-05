@@ -30,6 +30,7 @@ nav a:hover{
 h2{
   color: #031b4e;
   font-size: 36px;
+  margin: 10px auto;
 }
 
 h3{
@@ -39,7 +40,17 @@ h3{
 p{
   color: #4a5c81;
   font-size: 16px;
+  padding: 2%;
 }
+#deploy, #designed, #features, #service, #development h2{
+  margin-top: 50px;
+}
+#innovative_businesses, #designed, #development{
+  background-color: whitesmoke;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 
 /* NAVBAR RULES */
 
@@ -80,6 +91,7 @@ ul li.li_inline_block{
 .jumbotron{
   background: url("../img/jumbotron.jpg");
   margin-top: 105px;
+  margin-bottom: 0;
 }
 .jumbotron h1{
   color: white;
@@ -163,6 +175,7 @@ ul li.li_inline_block{
   background-color: lightgray;
 }
 /* SEZIONE  1/7 */
+
 #partners{
   display: block;
   margin: 25px auto;
