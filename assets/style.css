@@ -21,7 +21,7 @@
   clear: both;
 }
 nav a{
-color: #rgba(3, 27, 78, 1);
+color: rgba(3, 27, 78, 1);
 font-weight: bold;
 display: inline-block;
 padding-left: 15px;
@@ -45,7 +45,7 @@ h3{
 p{
   color: #4a5c81;
   font-size: 16px;
-  padding: 0 2% 2% 2%;
+  padding: 0 2% 2% 0;
 }
 #deploy, #designed, #features, #service, #development h2{
   margin-top: 50px;
@@ -82,7 +82,14 @@ nav ul li{
 nav ul li a{
   color: #031c4e;
 }
+#hamburger{
+  float:right;
+  margin-top: 11px;
+  margin-right: 50px;
+  font-size: 32px;
+  color: #006aff;
 
+}
 /* JUMBOTRON RULES */
 .jumbotron{
   background: url("../img/jumbotron.jpg");
@@ -196,24 +203,29 @@ nav ul li a{
 #deploy ul{
   margin: 0;
   color: #031b4e;
+  border-left: gray 1px solid;
 }
 .nav-pills>li>a,
 .nav-pills>li>a:focus,
 .nav-pills>li>a:hover{
   background-color: white;
-  border-left: 2px black solid;
   border-radius: 0;
   padding-left: 30px;
   color: rgba(3,27,78,.5);;
   font-weight: bold;
 }
+.nav-pills>li>a:hover{
+  border-left: #031c4e 3px solid;
+}
 .nav-pills>li.active>a{
   color: #031b4e;
   background-color: white;
+  border-left: #031c4e 3px solid;
 }
 .nav-pills>li.active>a:hover{
   color: #031b4e;
   background-color: white;
+  border-left: #031c4e 3px solid;
 }
 .nav-pills>li>a:hover{
   color: #031b4e;
@@ -230,7 +242,6 @@ nav ul li a{
 #deploy h3, #features h3{
   color: #031b4e;
   font-weight: bold;
-  display: inline-block;
 }
 #deploy p{
   margin-top: 10px;
@@ -248,7 +259,6 @@ nav ul li a{
 
 /* SEZIONE 4/7 */
 #features img{
-  float: left;
   margin-right: 10px;
 }
 
@@ -263,9 +273,8 @@ nav ul li a{
 }
 #service table td{
   color: white;
-  padding: 3% 3% 3% 0;
+  padding: 3% 2% 3% 0;
   border-bottom: 1px solid gray;
-
 }
 .opacita{
   opacity: 0.7;
@@ -275,10 +284,7 @@ nav ul li a{
 }
 
 /* SEZIONE 6/7 */
-#blockquote{
-  width: 750px;
-  margin: 0 auto;
-}
+
 
 /* SEZIONE 7/7 */
 #getstarted .jumbotron{
@@ -331,6 +337,29 @@ footer #copyright{
 }
 footer ul li{
   list-style-type: none;
+}
+/* MEDIA QUERIES */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+
+/* sm */
+@media all and (max-width:767px){
+
+}
+
+/* md */
+@media all and (min-width: 768px) and (max-width: 991px){
 
 
+}
+
+/* lg */
+@media all and (min-width: 992px) and (max-width: 1199px){
+  .features_item {
+    padding-left: 3%;
+  }
+  #copyright .row .container1200 div:first-child{
+    padding-left: 20px;
+  }
 }
