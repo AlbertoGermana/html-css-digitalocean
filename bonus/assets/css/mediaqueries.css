@@ -142,7 +142,82 @@
   /* <------------------------- MEDIA QUERY LG */
 @media all and (min-width: 1200px){
 
-/* <------------------------- MEDIA QUERY MD - SEZIONE 5/7 */
+/* <------------------------- MEDIA QUERY LG - SEZIONE 5/7 */
+
+ #products_menu{
+   display: none;
+ }
+
+  /* MENU A COMPARSA */
+  #featured_products{
+    border-right: lightgray 1px solid;
+  }
+  #featured_products h5{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 30px 10px;
+  }
+  #featured_products h6{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #featured_products p{
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  #featured_products img{
+    width: 40px;
+    height: auto;
+    margin: 12px 4px;
+
+  }
+
+  #products_menu{
+    position: absolute;
+    width: 100%;
+    top:65px;
+    left:0;
+    background-color: whitesmoke;
+  }
+  #featured_products li{
+    width: 100%;
+  }
+  #featured_products ul{
+    padding: 0;
+  }
+
+ .dd_menu_prod_item{
+   display: block;
+   float: left;
+   width: 33%;
+   margin-bottom: 60px;
+ }
+ .dd_menu_prod_item img{
+   margin: 10px;
+  }
+  #other_products{
+    margin-top: 50px;
+  }
+  .dd_menu_prod_item ul{
+    padding: 0;
+   }
+  .dd_menu_prod_item li{
+    display: block;
+   }
+   .dd_menu_prod_item a{
+    padding: 0;
+    }
+   #see_products{
+     border-top: lightgray 1px solid;
+     height: 50px;
+   }
+   #see_products p{
+     margin-top: 15px;
+   }
+   /* FINE MENU A COMPARSA */
+
+
   #service table{
     width: 100%;
   }
