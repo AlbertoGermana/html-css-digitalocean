@@ -21,11 +21,15 @@
   clear: both;
 }
 nav a{
-  color: gray;
-  padding-left: 15px;
+color: #rgba(3, 27, 78, 1);
+font-weight: bold;
+display: inline-block;
+padding-left: 15px;
 }
+
 nav a:hover{
   color: #0069ff;
+  text-decoration: none;
 }
 h2{
   color: #031b4e;
@@ -55,23 +59,11 @@ p{
 
 /* NAVBAR RULES */
 
-#nav_1st_fixed{
-  min-height: 40px;
-  border-bottom: 1px solid lightgray;
-}
-.nav_1st_v_align{
-  margin-top: 10px;
-  position: relative;
-}
-.nav_1st_v_align>ul{
-  float: right;
-  margin-right: 20px;
-}
-#nav_2nd_fixed{
-  top: 41px;
+#nav_fixed{
+  top: 0px;
   height: 65px;
 }
-.nav_2nd_v_align{
+.nav_v_align{
   margin-top: 25px;
 }
 nav img{
@@ -84,15 +76,19 @@ nav ul{
   display: block;
   float: left;
 }
-ul li.li_inline_block{
+nav ul li{
   display: inline-block;
+}
+nav ul li a{
+  color: #031c4e;
 }
 
 /* JUMBOTRON RULES */
 .jumbotron{
   background: url("../img/jumbotron.jpg");
-  margin-top: 105px;
+  margin-top: 65px;
   margin-bottom: 0;
+  border-radius: 0;
 }
 .jumbotron h1{
   color: white;
@@ -139,6 +135,9 @@ ul li.li_inline_block{
   position: relative;
   display: block;
   left: 5px;
+}
+#login_panel input {
+  text-indent: 10px;
 }
 #login_panel .btn-default{
   background-color: #f2f8ff;
@@ -228,7 +227,7 @@ ul li.li_inline_block{
 #deploy_box img{
   display: block;
 }
-#deploy h3{
+#deploy h3, #features h3{
   color: #031b4e;
   font-weight: bold;
   display: inline-block;
