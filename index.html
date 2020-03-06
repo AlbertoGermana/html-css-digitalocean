@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <title>Digital Ocean</title>
   </head>
   <body>
     <header>
       <!-- navbar -->
+      <!-- ok 4 responsive- finito -->
       <nav id="nav_fixed" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="row">
@@ -22,7 +26,7 @@
               <div id="hamburger" class="visible-xs visible-sm hidden-md hidden-lg">
                 <i class="fas fa-bars"></i>
               </div>
-              <div id="nav_ul" class="hidden-xs hidden-sm visible-md visibile-lg">
+              <div id="nav_ul" class="hidden-xs hidden-sm visible-md visible-lg">
                 <div class="col-xs-7 nav_v_align">
                   <ul>
                     <li><a href="#">Products</a></li>
@@ -39,27 +43,25 @@
                     <li><a href="#">Sign Up</a></li>
                   </ul>
                 </div>
-
               </div>
             </div>
-
-
-
           </div>
         </div>
       </nav>
     </header>
     <main>
+      <!-- SEZIONE JUMBOTRON -->
       <section>
+        <!-- ok responsive xs sm -->
         <div class="container-fluid">
           <div class="row">
             <div class="jumbotron">
               <div class="container1200">
-                <div class="col-md-6">
+                <div class="col-xs-12 col-md-6">
                   <h1>The simplest cloud platform for developers & teams</h1>
                   <p>We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
                 </div>
-                <div class="col-md-offset-1 col-md-5">
+                <div class="col-xs-12 col-md-offset-1 col-md-5">
                   <div class="container" id="login_panel">
                     <div class="col-xs-12">
                       <h2 class="text-center">Deploy in seconds</h2>
@@ -89,6 +91,7 @@
 
       <!-- SEZIONE 1/7 -->
       <section>
+        <!-- ok responsive xs sm -->
         <div id="innovative_businesses" class="container-fluid">
           <div class="row">
             <div class="container1200">
@@ -97,7 +100,6 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="container1200">
               <div class="col-xs-12">
@@ -127,6 +129,7 @@
 
       <!-- SEZIONE 2/7 -->
       <section>
+        <!-- ok responsive xs sm -->
         <div id="deploy" class="container-fluid">
           <div class="row">
             <div class="container1200">
@@ -140,7 +143,7 @@
           <div class="row">
             <div class="container1200">
               <!-- lista -->
-              <div class="col-xs-4">
+              <div class="col-xs-12 col-md-4">
                 <div id="deploy_list">
                   <ul class="nav nav-pills nav-stacked">
                     <li role="presentation" class="active"><a href="#">Deploy</a></li>
@@ -153,7 +156,7 @@
 
               </div>
               <!-- blocchi da 4 -->
-              <div class="col-xs-8">
+              <div class="col-xs-12 col-md-8">
                 <div class="deploy_box">
                   <img src="img/deploy/deploy1.png" alt="">
                   <h3>Kubernetes in minutes</h3>
@@ -184,6 +187,7 @@
 
       <!-- SEZIONE 3/7 -->
       <section>
+        <!-- ok responsive xs sm -->
         <div id="designed" class="container-fluid">
           <div class="row">
             <div class="container1200">
@@ -191,7 +195,7 @@
                 <h2 class="text-center">Designed for developers</h2>
                 <p class="text-center">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
 
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-offset-3 col-xs-6">
                   <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -245,6 +249,7 @@
 
       <!-- SEZIONE 4/7 -->
       <section>
+        <!-- ok responsive xs sm -->
         <div id="features" class="container-fluid">
           <div class="row">
             <div class="container1200">
@@ -283,77 +288,79 @@
               <div class="col-xs-12">
                 <h2 class="text-center">Service your customers around the world <br> from 12 regions.</h2>
               </div>
-              <div class="col-xs-offset-1 col-xs-5">
+              <div class="col-xs-12 col-md-offset-1 col-md-5">
                 <table>
                   <thead></thead>
                   <tr>
                     <td>AMS2</td>
                     <td class="opacita">Amsterdam, Netherlands</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                   <tr>
                     <td>AMS3</td>
                     <td class="opacita">Amsterdam, Netherlands</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                   <tr>
                     <td>BLR1</td>
                     <td class="opacita">Bangalore, India</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                   <tr>
                     <td>FRA1</td>
                     <td class="opacita">Frankfurt, Germany</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                   <tr>
                     <td>LON1</td>
                     <td class="opacita">London, UK</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                   <tr>
                     <td>NYC1</td>
                     <td class="opacita">New York, USA</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                 </table>
-              </div>
 
-              <div class="col-xs-5">
                 <table>
                   <thead></thead>
                   <tr>
                     <td>NYC2</td>
-                    <td>New York, USA</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="opacita">New York, USA</td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                   <tr>
                     <td>NYC3</td>
-                    <td>New York, USA</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="opacita">New York, USA</td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                   <tr>
                     <td>SFO</td>
-                    <td>San Francisco, USA</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="opacita">San Francisco, USA</td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                   <tr>
                     <td>SFO</td>
-                    <td>San Francisco, USA</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="opacita">San Francisco, USA</td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                   <tr>
                     <td>SGP</td>
-                    <td>Singapore</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="opacita">Singapore</td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                   <tr>
                     <td>TOR1</td>
-                    <td>Toronto, Canada</td>
-                    <td><a href="#">Test speed ></a></td>
+                    <td class="opacita">Toronto, Canada</td>
+                    <td class="td_link"><a href="#">Test speed ></a></td>
                   </tr>
                 </table>
               </div>
+
+              <!-- <div class="col-xs-12 col-md-5">
+
+              </div> -->
 
             </div>
           </div>
@@ -363,12 +370,13 @@
 
       <!-- SEZIONE 6/7 -->
       <section>
+        <!-- ok responsive xs sm -->
         <div id="development" class="container-fluid">
           <div class="row">
             <div class="container1200">
               <div class="col-xs-12">
                 <h2 class="text-center">Development teams love DigitalOcean</h2>
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-offset-3 col-xs-6 col-md-offset-3 col-md-6">
                   <div id="blockquote" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -425,7 +433,7 @@
       <div id="copyright" class="container-fluid">
         <div class="row">
           <div class="container1200">
-            <div class="col-xs-offset-1 col-xs-3">
+            <div class="col-xs-12 col-md-offset-1 col-md-3">
               <img src="img/logo_footer.png" alt="">
               <p><strong>© 2018 DigitalOcean, LLC. All rights reserved</strong></p>
               <p>Proudly made in NY</p>
@@ -436,7 +444,7 @@
               <i class="fab fa-linkedin"></i>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-xs-12 col-md-2">
               <ul>
                 <li><a href="#"><strong>Company</strong></a></li>
                 <li><a href="#">About</a></li>
@@ -451,7 +459,7 @@
                 <li><a href="#">Legal & Security</a></li>
               </ul>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-12 col-md-2">
               <ul>
                 <li><a href="#"><strong>Products</strong></a></li>
                 <li><a href="#">Droplets</a></li>
@@ -467,7 +475,7 @@
                 <li><a href="#">Release Notes</a></li>
               </ul>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-12 col-md-2">
               <ul>
                 <li><a href="#"><strong>Community</strong></a></li>
                 <li><a href="#">Tutorial</a></li>
@@ -482,7 +490,7 @@
                 <li><a href="#">Open Source</a></li>
               </ul>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-12 col-md-2">
               <ul>
                 <li><a href="#"><strong>Support</strong></a></li>
                 <li><a href="#">Contact support</a></li>
