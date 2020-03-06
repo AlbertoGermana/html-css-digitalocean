@@ -21,10 +21,10 @@
   clear: both;
 }
 nav a{
-color: rgba(3, 27, 78, 1);
-font-weight: bold;
-display: inline-block;
-padding-left: 15px;
+  color: rgba(3, 27, 78, 1);
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 15px;
 }
 
 nav a:hover{
@@ -108,7 +108,7 @@ nav ul li a{
   color: #ccdbff;
 }
 #login_panel{
-  width: 480px;
+  min-width: 100%;
   background-color: white;
   border-radius: 10px;
 }
@@ -124,14 +124,6 @@ nav ul li a{
   margin: 10px auto;
   border: solid 1px lightgray;
   font-weight: bold;
-/* !non capisco perche non aggiunge il colore alla scritta esempio:  color:red; */
-}
-.line{
-  background-color: lightgray;
-  height: 1px;
-  width: 150px;
-  display: inline-block;
-  margin: 3px 10px;;
 }
 #login_panel h2 a{
   color: #006aff;
@@ -145,6 +137,9 @@ nav ul li a{
 }
 #login_panel input {
   text-indent: 10px;
+}
+#login_panel input::placeholder {
+  color: lightgray;
 }
 #login_panel .btn-default{
   background-color: #f2f8ff;
@@ -192,13 +187,18 @@ nav ul li a{
   content: "";
   margin: 25px auto;
 }
-#innovative_businesses img{
-  max-width: calc(80%/6);
-  margin: 0 calc(8%/6);
-  display: block;
-  float: left;
+#partners ul{
+  padding-left: 0;
 }
-
+#partners li{
+  list-style-type: none;
+  display: inline-block;
+  width: calc(16%);
+}
+#partners img{
+  max-width: 100%;
+  display: block;
+}
 /* SEZIONE 2/7 */
 #deploy ul{
   margin: 0;
@@ -346,13 +346,25 @@ footer ul li{
 /* Large devices (large desktops, 1200px and up) */
 
 /* <------------------------- MEDIA QUERY  XS SM */
-@media all and (max-width:767px){
+@media all and (min-width: 480px) and (max-width: 991px){
+/* <------------------------- MEDIA QUERY XS SM - SEZIONE 1/7 */
   #innovative_businesses img{
-    max-width: calc(80%/2);
+    width: calc(100%);
     margin: 0 calc(8%/2);
     display: block;
     float: left;
   }
+    #partners ul li{
+      width: 49%;
+    }
+    #partners img{
+      max-width: 90%;
+      display: block;
+      margin: 0 auto;
+  }
+
+
+/* <------------------------- MEDIA QUERY XS SM - SEZIONE 2/7 */
   #deploy_list{
     display: block;
     float: left;
@@ -397,7 +409,7 @@ footer ul li{
     margin-left: 40px;
   }
 
-  /* footer */
+/* <------------------------- MEDIA QUERY XS SM - FOOTER */
   footer ul {
     padding-left: 15px;
   }
@@ -407,18 +419,60 @@ footer ul li{
 
 }
 
+
 /* md */
-@media all and (min-width: 768px) and (max-width: 991px){
-
-
-}
-
-/* lg */
 @media all and (min-width: 992px) and (max-width: 1199px){
+  .jumbotron h1{
+    font-size: 38px;
+  }
+  .jumbotron h2{
+    font-size: 32px;
+  }
+  .h2_deploy{
+    font-size: 32px;
+    margin: 20px auto;
+  }
   .features_item {
     padding-left: 3%;
   }
+  /* <------------------------- MEDIA QUERY md - SEZIONE 5/7 */
+  #service table{
+    width: 100%;
+  }
+
+  #service table td:first-child{
+    padding-left: 10px;
+  }
+  #service table .td_link{
+    text-align: right;
+    padding-right: 10px;
+  }
+  .opacita{
+    opacity: 0.7;
+    width: 300px;
+    display: block;
+    margin-left: 40px;
+  }
+
+
+  #partners li{
+    width: calc(16%);
+  }
+  #partners img{
+    max-width: 100%;
+    display: block;
+  }
+  footer .container1200 div:first-child{
+    margin-left: 35px;
+}
+
   #copyright .row .container1200 div:first-child{
     padding-left: 20px;
+  }
+}
+@media all and (min-width: 1200px){
+  #service table{
+    display: block;
+    float: left;
   }
 }
