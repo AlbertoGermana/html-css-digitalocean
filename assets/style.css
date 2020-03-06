@@ -470,9 +470,22 @@ footer ul li{
     padding-left: 20px;
   }
 }
+
+/* MEDIA QUERIES LG */
+
 @media all and (min-width: 1200px){
   #service table{
-    display: block;
-    float: left;
+    width: 100%;
+  }
+
+  #service table td:first-child{
+    padding-left: 10px;
+  }
+  #service table .td_link{
+    text-align: right;
+    padding-right: 10px;
+  }
+  .opacita{
+    padding-left: 50px;
   }
 }
