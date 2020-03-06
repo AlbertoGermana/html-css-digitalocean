@@ -1,0 +1,377 @@
+/* COMMON RULES */
+.container1200{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container1200:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a{
+  color: rgba(3, 27, 78, 1);
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 15px;
+}
+nav a:hover{
+  color: #0069ff;
+  text-decoration: none;
+}
+h2{
+  color: #031b4e;
+  font-size: 36px;
+  margin: 40px auto;
+  font-weight: bolder;
+}
+h3{
+  font-size: 14px;
+  color: darkgray;
+}
+p{
+  color: #4a5c81;
+  font-size: 16px;
+  padding: 0 2% 2% 0;
+}
+#deploy, #designed, #features, #service, #development h2{
+  margin-top: 50px;
+}
+#innovative_businesses, #designed, #development{
+  background-color: whitesmoke;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/* NAVBAR RULES */
+#nav_fixed{
+  top: 0px;
+  height: 65px;
+}
+.nav_v_align{
+  margin-top: 25px;
+}
+nav img{
+  height: 30px;
+  width: auto;
+  float: left;
+  margin: -8px auto;
+}
+nav ul{
+  display: block;
+  float: left;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: #031c4e;
+}
+.btn-default{
+  border: 1px solid #006aff;
+  color: #006aff;
+  margin-left: 10px;
+}
+.btn-default:hover{
+  border: 1px solid #006aff;
+  background-color: #006aff;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+#hamburger{
+  float:right;
+  margin-top: 11px;
+  margin-right: 50px;
+  font-size: 32px;
+  color: #006aff;
+}
+
+
+/* JUMBOTRON RULES */
+.jumbotron{
+  background: url("../../img/jumbotron.jpg");
+  margin-top: 65px;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.jumbotron h1{
+  color: white;
+  font-weight: bold;
+}
+.jumbotron h2{
+  font-weight: bold;
+}
+.jumbotron p{
+  color: #ccdbff;
+}
+#login_panel{
+  min-width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.login_form{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.login_item{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px auto;
+  border: solid 1px lightgray;
+  font-weight: bold;
+}
+#login_panel h2 a{
+  color: #006aff;
+}
+#login_panel img{
+  width: 18px;
+  height: 18px;
+  position: relative;
+  display: block;
+  left: 5px;
+}
+#login_panel input {
+  text-indent: 10px;
+}
+#login_panel input::placeholder {
+  color: lightgray;
+}
+#login_panel .btn-default{
+  background-color: #f2f8ff;
+  width: 80%;
+  height: 48px;
+  margin: 46px auto;
+  display: block;
+  padding: 15px;
+  font-size: 20px;
+}
+#login_panel .btn-default:hover{
+  background-color: #d5e4f7;
+}
+#login_panel p{
+  font-size: 12px;
+  color: black;
+}
+#login_panel button{
+  background-color: #579aff;
+  color: white;
+}
+#login_panel button:hover{
+  background-color: #006aff;
+}
+.login_form #google_btn{
+  background-color: white;
+  color: black;
+}
+.login_form #google_btn img{
+  display: inline-block;
+  float: left;
+}
+.login_form #google_btn:hover{
+  background-color: lightgray;
+}
+
+
+/* SEZIONE  1/7 */
+#partners{
+  display: block;
+  margin: 25px auto;
+}
+#partners:after{
+  clear: both;
+  display: table;
+  content: "";
+  margin: 25px auto;
+}
+#partners ul{
+  padding-left: 0;
+}
+#partners li{
+  list-style-type: none;
+  display: inline-block;
+  width: calc(16%);
+}
+#partners img{
+  max-width: 100%;
+  display: block;
+}
+
+
+/* SEZIONE 2/7 */
+#deploy ul{
+  margin: 0;
+  color: #031b4e;
+  border-left: gray 1px solid;
+}
+.nav-pills>li>a,
+.nav-pills>li>a:focus,
+.nav-pills>li>a:hover{
+  background-color: white;
+  border-radius: 0;
+  padding-left: 30px;
+  color: rgba(3,27,78,.5);;
+  font-weight: bold;
+}
+.nav-pills>li>a:hover{
+  border-left: #031c4e 3px solid;
+}
+.nav-pills>li.active>a{
+  color: #031b4e;
+  background-color: white;
+  border-left: #031c4e 3px solid;
+}
+.nav-pills>li.active>a:hover{
+  color: #031b4e;
+  background-color: white;
+  border-left: #031c4e 3px solid;
+}
+.nav-pills>li>a:hover{
+  color: #031b4e;
+}
+#deploy_list{
+  display: block;
+  margin: 25px auto;
+  width: 200px;
+  margin-top: 100px;
+}
+#deploy_box img{
+  display: block;
+}
+#deploy h3, #features h3{
+  color: #031b4e;
+  font-weight: bold;
+}
+#deploy p{
+  margin-top: 10px;
+}
+.deploy_box{
+  display: block;
+  float: left;
+  width: 40%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+
+/* SEZIONE 3/7 */
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: #333;
+}
+.flickity-button:hover {
+  background: #333;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background-color: #006aff;
+}
+.flickity-page-dots .dot {
+  background-color: whitesmoke;
+  opacity: 1;
+  cursor: pointer;
+  border: 2px solid #006aff;
+}
+
+/* SEZIONE 4/7 */
+#features img{
+  margin-right: 10px;
+}
+
+
+/* SEZIONE 5/7 */
+#service{
+  background: #031b4e url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
+  padding-bottom: 100px;
+}
+#service h2{
+  color: white;
+}
+#service tr{
+  border-bottom: 1px solid gray;
+  height: 30px;
+}
+#service table td{
+  color: white;
+}
+.opacita{
+  opacity: 0.7;
+}
+#service table td a{
+  padding-left: 80px;
+}
+
+
+/* SEZIONE 6/7 */
+
+
+/* SEZIONE 7/7 */
+#getstarted .jumbotron{
+  margin-top: 0;
+  border-radius: 0;
+}
+#getstarted h2{
+  color: white;
+  font-weight: bolder;
+}
+#getstarted .btn-primary{
+  background-color: white;
+  color: #006aff;
+  font-weight: bold;
+  padding: 10px 32px;
+}
+
+/* FOOTER */
+footer{
+  background-color: #031c4e;
+  color: #7a859d;
+}
+footer a{
+  color: #7a859d;
+}
+footer a:hover, footer a strong{
+  color: white;
+  text-decoration: none;
+}
+footer p{
+  margin: 0;
+  padding: 0;
+}
+footer p strong{
+  color: white;;
+}
+footer img{
+  margin-bottom: 10px;
+}
+footer i{
+  font-size: 20px;
+  margin: 10px 5px;
+}
+footer i:hover{
+  color: white;
+}
+footer #copyright{
+  padding: 100px 0;
+}
+footer ul li{
+  list-style-type: none;
+}
