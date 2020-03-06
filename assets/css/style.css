@@ -1,15 +1,3 @@
-/* DEBUG:  */
-.red{
-  background-color: red;
-  border: solid 1px black;
-}
-.green{
-  background-color: green;
-  border: solid 1px black;
-}
-
-/* DEBUG:  */
-
 /* COMMON RULES */
 .container1200{
   max-width: 1200px;
@@ -26,7 +14,6 @@ nav a{
   display: inline-block;
   padding-left: 15px;
 }
-
 nav a:hover{
   color: #0069ff;
   text-decoration: none;
@@ -37,7 +24,6 @@ h2{
   margin: 40px auto;
   font-weight: bolder;
 }
-
 h3{
   font-size: 14px;
   color: darkgray;
@@ -58,7 +44,6 @@ p{
 
 
 /* NAVBAR RULES */
-
 #nav_fixed{
   top: 0px;
   height: 65px;
@@ -82,17 +67,30 @@ nav ul li{
 nav ul li a{
   color: #031c4e;
 }
+.btn-default{
+  border: 1px solid #006aff;
+  color: #006aff;
+  margin-left: 10px;
+}
+.btn-default:hover{
+  border: 1px solid #006aff;
+  background-color: #006aff;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
 #hamburger{
   float:right;
   margin-top: 11px;
   margin-right: 50px;
   font-size: 32px;
   color: #006aff;
-
 }
+
+
 /* JUMBOTRON RULES */
 .jumbotron{
-  background: url("../img/jumbotron.jpg");
+  background: url("../../img/jumbotron.jpg");
   margin-top: 65px;
   margin-bottom: 0;
   border-radius: 0;
@@ -116,7 +114,6 @@ nav ul li a{
   padding-left: 18px;
   padding-right: 18px;
 }
-
 .login_item{
   width: 100%;
   height: 40px;
@@ -175,8 +172,9 @@ nav ul li a{
 .login_form #google_btn:hover{
   background-color: lightgray;
 }
-/* SEZIONE  1/7 */
 
+
+/* SEZIONE  1/7 */
 #partners{
   display: block;
   margin: 25px auto;
@@ -199,6 +197,8 @@ nav ul li a{
   max-width: 100%;
   display: block;
 }
+
+
 /* SEZIONE 2/7 */
 #deploy ul{
   margin: 0;
@@ -254,6 +254,7 @@ nav ul li a{
   margin-top: 50px;
 }
 
+
 /* SEZIONE 3/7 */
 
 
@@ -262,12 +263,12 @@ nav ul li a{
   margin-right: 10px;
 }
 
+
 /* SEZIONE 5/7 */
 #service{
   background: #031b4e url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
   padding-bottom: 100px;
 }
-
 #service h2{
   color: white;
 }
@@ -285,6 +286,7 @@ nav ul li a{
   padding-left: 80px;
 }
 
+
 /* SEZIONE 6/7 */
 
 
@@ -297,7 +299,6 @@ nav ul li a{
   color: white;
   font-weight: bolder;
 }
-
 #getstarted .btn-primary{
   background-color: white;
   color: #006aff;
@@ -339,153 +340,4 @@ footer #copyright{
 }
 footer ul li{
   list-style-type: none;
-}
-/* MEDIA QUERIES */
-/* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
-
-/* <------------------------- MEDIA QUERY  XS SM */
-@media all and (min-width: 480px) and (max-width: 991px){
-/* <------------------------- MEDIA QUERY XS SM - SEZIONE 1/7 */
-  #innovative_businesses img{
-    width: calc(100%);
-    margin: 0 calc(8%/2);
-    display: block;
-    float: left;
-  }
-    #partners ul li{
-      width: 49%;
-    }
-    #partners img{
-      max-width: 90%;
-      display: block;
-      margin: 0 auto;
-  }
-
-
-/* <------------------------- MEDIA QUERY XS SM - SEZIONE 2/7 */
-  #deploy_list{
-    display: block;
-    float: left;
-    margin: 0;
-    width: 200px;
-  }
-  .deploy_box, .features_item{
-    display: block;
-    float: left;
-    width: 100%;
-    margin-right: 5%;
-    margin-top: 10px;
-    margin: 10px 5% 0 0;
-  }
-  .deploy_box h3, .features_item h3{
-    margin-top: 5px;
-  }
-  .deploy_box p, .features_item p{
-    margin-bottom: 0px;
-  }
-  .deploy_box img, .features_item img{
-    margin-top: 10px;
-  }
-
-
-  /* <------------------------- MEDIA QUERY XS SM - SEZIONE 5/7 */
-  #service table{
-    width: 100%;
-  }
-
-  #service table td:first-child{
-    padding-left: 10px;
-  }
-  #service table .td_link{
-    text-align: right;
-    padding-right: 10px;
-  }
-  .opacita{
-    opacity: 0.7;
-    width: 300px;
-    display: block;
-    margin-left: 40px;
-  }
-
-/* <------------------------- MEDIA QUERY XS SM - FOOTER */
-  footer ul {
-    padding-left: 15px;
-  }
-  footer .container1200 div:first-child{
-    margin-left: 15px;
-  }
-
-}
-
-
-/* md */
-@media all and (min-width: 992px) and (max-width: 1199px){
-  .jumbotron h1{
-    font-size: 38px;
-  }
-  .jumbotron h2{
-    font-size: 32px;
-  }
-  .h2_deploy{
-    font-size: 32px;
-    margin: 20px auto;
-  }
-  .features_item {
-    padding-left: 3%;
-  }
-  /* <------------------------- MEDIA QUERY md - SEZIONE 5/7 */
-  #service table{
-    width: 100%;
-  }
-
-  #service table td:first-child{
-    padding-left: 10px;
-  }
-  #service table .td_link{
-    text-align: right;
-    padding-right: 10px;
-  }
-  .opacita{
-    opacity: 0.7;
-    width: 300px;
-    display: block;
-    margin-left: 40px;
-  }
-
-
-  #partners li{
-    width: calc(16%);
-  }
-  #partners img{
-    max-width: 100%;
-    display: block;
-  }
-  footer .container1200 div:first-child{
-    margin-left: 35px;
-}
-
-  #copyright .row .container1200 div:first-child{
-    padding-left: 20px;
-  }
-}
-
-/* MEDIA QUERIES LG */
-
-@media all and (min-width: 1200px){
-  #service table{
-    width: 100%;
-  }
-
-  #service table td:first-child{
-    padding-left: 10px;
-  }
-  #service table .td_link{
-    text-align: right;
-    padding-right: 10px;
-  }
-  .opacita{
-    padding-left: 50px;
-  }
 }
