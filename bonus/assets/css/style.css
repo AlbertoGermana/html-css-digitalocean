@@ -8,15 +8,20 @@
   display: table;
   clear: both;
 }
-nav a{
+
+.navbar-default .navbar-nav>li>a{
   color: rgba(3, 27, 78, 1);
   font-weight: bold;
   display: inline-block;
   padding-left: 15px;
 }
-nav a:hover{
-  color: #0069ff;
-  text-decoration: none;
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: #0069ff;
+}
+
+#nav_ul .col-xs-5{
+  margin-top: 20px;
 }
 h2{
   color: #031b4e;
@@ -44,28 +49,23 @@ p{
 
 
 /* NAVBAR RULES */
-#nav_fixed{
-  top: 0px;
-  height: 65px;
-}
-.nav_v_align{
-  margin-top: 25px;
-}
-nav img{
+ nav img{
   height: 30px;
   width: auto;
   float: left;
   margin: -8px auto;
 }
+
 nav ul{
   display: block;
-  float: left;
+float: left;
 }
 nav ul li{
-  display: inline-block;
+  display: block;
+
 }
-nav ul li a{
-  color: #031c4e;
+.navbar{
+  margin-bottom: 0;
 }
 .btn-default{
   border: 1px solid #006aff;
@@ -91,7 +91,6 @@ nav ul li a{
 /* JUMBOTRON RULES */
 .jumbotron{
   background: url("../../img/jumbotron.jpg");
-  margin-top: 65px;
   margin-bottom: 0;
   border-radius: 0;
 }

@@ -142,11 +142,11 @@
   /* <------------------------- MEDIA QUERY LG */
 @media all and (min-width: 1200px){
 
-/* <------------------------- MEDIA QUERY LG - SEZIONE 5/7 */
+/* <------------------------- MEDIA QUERY LG - NAVBAR */
 
- #products_menu{
-   display: none;
- }
+  nav li .btn-default{
+    margin-top: 8px;
+  }
 
   /* MENU A COMPARSA */
   #featured_products{
@@ -174,10 +174,7 @@
   }
 
   #products_menu{
-    position: absolute;
-    width: 100%;
-    top:65px;
-    left:0;
+    min-width: 1200px;
     background-color: whitesmoke;
   }
   #featured_products li{
@@ -190,24 +187,28 @@
  .dd_menu_prod_item{
    display: block;
    float: left;
-   width: 33%;
-   margin-bottom: 60px;
+   height: 200px;
  }
  .dd_menu_prod_item img{
-   margin: 10px;
+   width: 18px;
+   height: 18px;
+   margin: 0 10px;
   }
   #other_products{
     margin-top: 50px;
   }
+  #other_products li{
+    width: 33%;
+  }
   .dd_menu_prod_item ul{
+    margin-left: 25px;
     padding: 0;
    }
-  .dd_menu_prod_item li{
-    display: block;
+
+  .dd_menu_prod_item ul li{
+    width: 180px!important;
    }
-   .dd_menu_prod_item a{
-    padding: 0;
-    }
+
    #see_products{
      border-top: lightgray 1px solid;
      height: 50px;
